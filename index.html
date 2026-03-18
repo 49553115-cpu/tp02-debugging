@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adiviná el número</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="scene">
+    <span class="orb o1"></span>
+    <span class="orb o2"></span>
+    <span class="orb o3"></span>
+    <span class="orb o4"></span>
+    <span class="orb o5"></span>
+  </div>
+
+  <main class="wrap">
+    <header class="title">
+      <h1>Adiviná el número</h1>
+      <p class="subtitle">Estoy pensando un número entre <strong>1</strong> y <strong>100</strong></p>
+    </header>
+
+    <section class="card">
+      <label for="guessInput" class="visually-hidden">Tu número</label>
+      <input id="guessInput" type="number" placeholder="Escribe tu número" min="1" max="100" inputmode="numeric">
+
+      <div class="controls">
+        <button id="guessBtn" class="btn">Adivinar</button>
+        <button id="resetBtn" class="btn ghost">Reiniciar</button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
+
+      <p class="meta">Intentos: <span id="attempts">0</span></p>
+    </section>
+
+    <footer class="credits">Hecho con ❤️ — estilo original y animado</footer>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
